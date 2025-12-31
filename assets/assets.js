@@ -6,10 +6,8 @@ import edu_icon_dark from './edu-icon-dark.png';
 import project_icon from './project-icon.png';
 import project_icon_dark from './project-icon-dark.png';
 import vscode from './vscode.png';
-import firebase from './firebase.png';
 import figma from './figma.png';
 import git from './git.png';
-import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
 import logo_dark from './logo_dark.png';
@@ -35,6 +33,8 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import n8n from './n8n.png';
+import postgres from './postgres.png';
 
 export const assets = {
     user_image,
@@ -45,10 +45,9 @@ export const assets = {
     project_icon,
     project_icon_dark,
     vscode,
-    firebase,
     figma,
     git,
-    mongodb,
+    n8n,
     right_arrow_white,
     logo,
     logo_dark,
@@ -73,7 +72,8 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    postgres
 };
 
 export const workData = [
@@ -100,18 +100,18 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'AURA', description: 'An HR Automation workflow. Tech Stack: Javascript, n8n, React, Vercel', link: 'https://aura-version1.vercel.app' },
+    { icon: assets.mobile_icon, title: 'Recruitment Automator', description: 'A workflow used to make the recruitment process easier. Tech Stack: n8n, Javascript ', link: '#projects' },
+    { icon: assets.ui_icon, title: 'Network Status Checker ', description: 'An automatic network status checker that sends network status updates via email. Tech Stack: n8n, Javascript', link: '#projects' },
+    { icon: assets.graphics_icon, title: 'Personal Web Portfolio', description: 'This Website! Tech Stack: React, Vercel, Next JS  ', link: '#home' },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript, React Js, Next Js, Java, C++' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Bachelors in Computer Science at Pan-Atlantic University' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'AURA: HR Automation Workflow, Network Status Notifier, Personal Web Portfolio ' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.n8n, assets.figma, assets.git, assets.postgres
 ];

@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    @apply bg-white text-slate-900 duration-300 transition-colors;
+  }
+  .dark body {
+    @apply bg-[#0b1120] text-white;
+  }
+}
+
 *{
   font-family: Outfit;
 }
