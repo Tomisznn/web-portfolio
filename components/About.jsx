@@ -41,7 +41,7 @@ const About_Me = ({isDarkMode}) => {
           transition={{duration: 0.4, delay:0.6}}
           className='flex-1'> 
 
-            <p className='mb-10 max-w-2xl'>My name Tioluwani Oluwatomisin Ige-Jones. I was born and raised in Nigeria and im currently a student attending pan-atlntic university. I am on the path to becoming a software engineer, project manager and AI engineer. </p>
+            <p className='mb-10 max-w-2xl'>My name Tioluwani Oluwatomisin Ige-Jones. I was born and raised in Nigeria and im currently a student attending pan-atlantic university. I am on the path to becoming a software engineer, project manager and AI engineer. </p>
 
             <motion.ul 
               initial={{opacity: 0}}
