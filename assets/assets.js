@@ -35,6 +35,7 @@ import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import n8n from './n8n.png';
 import postgres from './postgres.png';
+import aurass from './aurass.png';
 
 export const assets = {
     user_image,
@@ -73,7 +74,8 @@ export const assets = {
     send_icon,
     right_arrow_bold,
     right_arrow_bold_dark,
-    postgres
+    postgres,
+    aurass
 };
 
 export const workData = [
@@ -100,7 +102,7 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'AURA', description: 'An HR Automation workflow. Tech Stack: Javascript, n8n, React, Vercel', link: 'https://aura-version1.vercel.app' },
+    { icon: assets.web_icon, title: 'AURA', description: 'An HR Automation workflow. Tech Stack: Javascript, n8n, React, Vercel', link: '/project-details' },
     { icon: assets.mobile_icon, title: 'Recruitment Automator', description: 'A workflow used to make the recruitment process easier. Tech Stack: n8n, Javascript ', link: '#projects' },
     { icon: assets.ui_icon, title: 'Network Status Checker ', description: 'An automatic network status checker that sends network status updates via email. Tech Stack: n8n, Javascript', link: '#projects' },
     { icon: assets.graphics_icon, title: 'Personal Web Portfolio', description: 'This Website! Tech Stack: React, Vercel, Next JS  ', link: '#home' },

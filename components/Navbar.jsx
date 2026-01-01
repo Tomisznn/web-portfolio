@@ -1,3 +1,4 @@
+"use client";
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React, { useRef } from 'react'
@@ -20,12 +21,12 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         <Image src={assets.header_bg_color} alt='' className='w-full' /> 
       </div>
 
-      <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50  ">
+      <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex h-20 items-center justify-between z-50 ">
         <a href="#top">
-          <Image src={isDarkMode ? assets.logo_dark : assets.logo} alt="Logo" className='w-28 cursor-pointer mr-14 dark:w-10' />
+          <Image src={isDarkMode ? assets.logo_dark : assets.logo} alt="Logo" className='w-28 cursor-pointer mr-14 ' />
         </a>
 
-        {/* Desktop Menu - Dark mode background and text */}
+        
         <ul className='hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-md bg-opacity-50 dark:bg-slate-800/60 dark:text-white'>
           <li><a href='#top'>Home</a></li>                
           <li><a href='#about'>About me</a></li>
@@ -34,7 +35,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         </ul>
 
         <div className='flex items-center gap-4'> 
-          {/* Dark Mode Toggle Button */}
+          
           <button className='cursor-pointer p-2' onClick={() => setIsDarkMode(prev => !prev)}>
             <Image src={isDarkMode ? assets.sun_icon : assets.moon_icon} alt='Theme Toggle' className='w-6'/>
           </button>
@@ -48,7 +49,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           </button>
         </div>
 
-        {/* Mobile Menu - Colors updated for dark mode */}
+        
         <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 dark:bg-[#111827] dark:text-white'>
           <div className='absolute right-6 top-6' onClick={closeMenu}>
             <Image src={isDarkMode ? assets.close_white : assets.close_black} alt='Close' className='w-5 cursor-pointer' />

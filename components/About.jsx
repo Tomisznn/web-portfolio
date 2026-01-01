@@ -41,14 +41,15 @@ const About_Me = ({isDarkMode}) => {
           transition={{duration: 0.4, delay:0.6}}
           className='flex-1'> 
 
-            <p className='mb-10 max-w-2xl'>I am a software engineer currently pursuing a bachelors degree in pan-atlantic university. </p>
+            <p className='mb-10 max-w-2xl'>My name Tioluwani Oluwatomisin Ige-Jones. I was born and raised in Nigeria and im currently a student attending pan-atlntic university. I am on the path to becoming a software engineer, project manager and AI engineer. </p>
 
             <motion.ul 
-            initial={{opacity: 0}}
-          whileInView={{opacity: 1}}
-          transition={{duration: 0.1, delay:0.4}}
-            className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl '> 
+              initial={{opacity: 0}}
+              whileInView={{opacity: 1}}
+              transition={{duration: 0.1, delay:0.4}}
+              className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl '> 
               {infoList.map(({icon, iconDark, title, description}, index)=>(
+
                 <motion.li 
                 
                 whileInView={{scale:1.05}}
@@ -58,7 +59,9 @@ const About_Me = ({isDarkMode}) => {
                   <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>{title}</h3>
                   <p className='text-gray-600 text-sm dark:text-white/80'>{description}</p>
                 </motion.li>
+
               ))}
+
             </motion.ul>
 
             <h4 className='my-6 text-gray-700 font-semibold dark:text-white '>Tools I use</h4>

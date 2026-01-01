@@ -14,7 +14,7 @@ export default function Home() {
 
 const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // 1. On Mount: Check localStorage or System Preference
+  
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
     const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -26,7 +26,7 @@ const [isDarkMode, setIsDarkMode] = useState(false);
     }
   }, []);
 
-  // 2. Whenever isDarkMode changes, update the HTML class and localStorage
+  
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add("dark");
@@ -42,7 +42,7 @@ const [isDarkMode, setIsDarkMode] = useState(false);
     <div className="min-h-screen bg-white text-slate-900 dark:bg-[#0b1120] dark:text-white transition-colors duration-300">
     <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
     
-    {/* Wrap components in a main tag to ensure they inherit the text color */}
+    
     <main>
       <Header isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />
